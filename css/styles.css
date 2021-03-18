@@ -177,8 +177,8 @@ h3 {
 .section-hero {
   background-color: var(--alternative-bgc);
   color: #ffffff;
-  /* height: 600px;
-  padding: 200px; */
+  /* height: 600px; */
+  padding: 200px;
   text-align: center;
 }
 .hero-title {
@@ -236,6 +236,10 @@ h3 {
 
 .features-list {
   display: flex;
+}
+
+..features-list .item {
+  min-width: 270px;
 }
 
 .features-list .item:not(:last-child) {
@@ -316,6 +320,9 @@ h3 {
 }
 
 /* Карточки */
+.cards {
+  box-sizing: border-box;
+}
 
 .cards a {
   color: var(--primary-text-color);
@@ -390,6 +397,10 @@ h3 {
   display: block;
   margin-bottom: 20px;
 }
-.footer-contacts .item {
+.footer-contacts .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts {
   margin-top: 9px;
 }
