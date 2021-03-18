@@ -299,6 +299,8 @@ margin-right: 93px;
 }
 
 .button {
+ padding: 6px 22px;
+
   background-color: var(--additional-bgc);
   color: var(--title-text-color);
   border-color: transparent;
@@ -315,9 +317,6 @@ margin-right: 93px;
 }
 
 /* Карточки */
-.conteiner.portfolio {
-  /* background-color: teal; */
-}
 
 .cards a {
   color: var(--primary-text-color);
@@ -342,7 +341,6 @@ margin-right: 93px;
 }
 
 .cards .item {
-  /* background-color: thistle; */
   margin-right: 30px;
   margin-bottom: 30px;
 }
