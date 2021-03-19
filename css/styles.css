@@ -78,6 +78,9 @@ h3 {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -177,7 +180,7 @@ h3 {
 .section-hero {
   background-color: var(--alternative-bgc);
   color: #ffffff;
-  /* height: 600px; */
+
   padding: 200px;
   text-align: center;
 }
@@ -225,20 +228,17 @@ h3 {
   line-height: 1.14;
   text-transform: uppercase;
 }
-.section-features {
+
+.features-list .text {
   font-size: 14px;
   line-height: 1.71;
-}
-
-.section-features .conteiner {
-  padding-bottom: 0px;
 }
 
 .features-list {
   display: flex;
 }
 
-..features-list .item {
+.features-list .item {
   min-width: 270px;
 }
 
@@ -247,6 +247,9 @@ h3 {
 }
 
 /* Деятельность */
+.section-gallery {
+  padding-top: 0px;
+}
 
 .gallery-list {
   display: flex;
@@ -257,12 +260,15 @@ h3 {
   margin-right: 30px;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Сотрудники */
 .section-team {
   background-color: var(--additional-bgc);
-  font-size: 16px;
-  line-height: 1.18;
 }
+
 .team-title {
   margin-bottom: 10px;
   color: var(--title-text-color);
@@ -273,6 +279,11 @@ h3 {
 .team-list .item {
   background-color: var(--primary-bgc);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.18;
 }
 
 .team-list .item .description {
@@ -294,7 +305,7 @@ h3 {
 .filtrs-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filtrs-list .item + .item {
@@ -360,14 +371,20 @@ h3 {
 
 .cards .item .description {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-top: 0px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom;: 1px solid #eeeeee;
 }
 
 /* Подвал */
-.footer {
+.section-footer {
   background-color: var(--alternative-bgc);
   color: #ffffff;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
 .footer-contacts .link {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -377,26 +394,17 @@ h3 {
   color: var(--accent-color);
 }
 
-.home {
-  font-style: normal;
+.section-footer .text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.footer-conteiner {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer-conteiner .logo {
+.section-footer .logo {
   display: block;
   margin-bottom: 20px;
+  margin-right: 0px;
 }
+
 .footer-contacts .item:not(:last-child) {
   margin-bottom: 9px;
 }
