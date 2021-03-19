@@ -87,7 +87,6 @@ h3 {
 }
 
 /* Логотип */
-
 .logo {
   margin-right: 93px;
 
@@ -106,7 +105,6 @@ h3 {
 }
 
 /*  Навигация по сайту */
-
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -177,7 +175,6 @@ h3 {
 }
 
 /* Герой */
-
 .section-hero {
   background-color: var(--alternative-bgc);
   color: #ffffff;
@@ -230,21 +227,23 @@ h3 {
   text-transform: uppercase;
 }
 
-.features-list .text {
-  font-size: 14px;
-  line-height: 1.71;
-}
-
 .features-list {
   display: flex;
+  justify-content: center;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
 .features-list .item {
   min-width: 270px;
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
-.features-list .item:not(:last-child) {
-  margin-right: 30px;
+.features-list .text {
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* Деятельность */
@@ -254,15 +253,14 @@ h3 {
 
 .gallery-list {
   display: flex;
-  justify-content: center;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
 }
 
-.gallery-list .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-img {
-  max-width: 100%;
+.gallery-list .item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 /* Сотрудники */
@@ -277,9 +275,19 @@ img {
   font-size: 16px;
 }
 
+.team-list {
+  display: flex;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
 .team-list .item {
   background-color: var(--primary-bgc);
   border-radius: 0px 0px 4px 4px;
+
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
 }
 
 .team-list .text {
@@ -291,15 +299,6 @@ img {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
-}
-
-.team-list {
-  display: flex;
-  justify-content: center;
-}
-
-.team-list .item:not(:last-child) {
-  margin-right: 30px;
 }
 
 /* Фильтр в Портфолио */
@@ -335,8 +334,6 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  padding: 0px;
-  margin: 0px;
   margin-left: calc(-1 * var(--card-set-gap));
   margin-top: calc(-1 * var(--card-set-gap));
 }
